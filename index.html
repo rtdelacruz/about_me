@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+ 	<head>
+    	<title>About Me</title>
+    	<link type="text/css" rel="stylesheet" href="my-first-stylesheet.css"/>
+     	</head>
+  	<body onload="blinktext();">
+ 	<header>
+      	<p>
+        <sup>Rolly</sup>Rolando</p>
+      	<h1>About Me</h1>
+      	<nav>
+        <ul>
+        <li>
+        <a href="home.html">Home</a>
+	</li>
+        <li class="selected">About Me</li>
+        <li>
+        <a href="education.html">Education</a>
+        </li>
+        <li>
+        <a href="work.html">Work Experience</a>
+        </li>
+        <li>
+        <a href="ambition.html">Dreams&Ambitions</a>
+        </li>
+	</ul>
+      	</nav>
+    	</header>
+	<article>
+ 	<h1><marquee>Meet Rolly</marquee></h1>
+	<section>
+	<p>
+        <img class="small" src="rolly.PNG" alt="Picture of Rolly"/>
+      	</p>
+      	<p>Rolando “Rolly” T. Dela Cruz, is married to Lanie and with a son name Caleb. Born on July 19, 1976, turning his golden age this year. Working in a corporate world, in Treasury.
+	</p>
+	<p>Choose to study the Diploma in Computer Science to enhance the knowledge on the Computer environment. And in the future can teach the next generation.
+	</p>
+	</section>
+      	<section>
+        <h2>Lanie – Rolly's Loving Wife</h2>
+	<p>
+	<img class="small" img id="display-image" onclick="swapImage()" src="lanie1.PNG" width="180"
+height="180"/>
+	</p>
+	<script>
+	function swapImage() {
+	var imageDisplayed = document.getElementById('display-image');
+	if (imageDisplayed.src.match("lanie1.PNG")) {
+	imageDisplayed.src = "lanie2.PNG";
+	}
+	else {
+	imageDisplayed.src = "lanie1.PNG";
+	}
+	}
+	</script>
+        <p>She is Lanie, the wife of Rolly. They have been together for 22 years as a married couple. They love to share the Gospel (the word of God) to others. Giving the weekend time in the ministry which they love the most. Lanie is a very supportive wife and very manageable housewife and very caring mother.</p>
+	<p style="color:red"; id="mention">(Click the image to change it!)</p>
+	<script type="text/javascript">
+	function blinktext() {
+	var f = document.getElementById('mention');
+	setInterval(function() {
+	f.style.visibility = (f.style.visibility == 'hidden' ? '' : 'hidden');
+	}, 1000); // 1000 milliseconds = 1 second interval
+	}
+	</script>
+      	</section>
+      	<section>
+        <h2>Caleb – Rolly's Wonderful Son</h2>
+        <p>
+        <img class="small" src="caleb.PNG" alt="Picture of Caleb"/>
+        </p>
+        <p>He is Caleb, 21 years old. 3rd year college student studying Information Technology at STI. Love to play guitar and play basketball. They almost lost Caleb when he suffer traumatic head injury on November 2024, with a survival rate of 40%. Blessedly he survived and God healed him.</p>
+      	</section>
+      	</article>
+      	<aside>
+        <section>
+        <h2>Hobbies and Interest</h2>
+	<p>Playing and watching sports game are some of the hobbies:</p>
+        <h3>Tennis</h3>
+        <p>Tennis is a PE subject of Rolly back in his PUP life. And he always updated on the sports event of our Kababayan Alex Aela.</p>
+        <h3>Bowling</h3>
+	<p>This sport is a bonding time with his Dgroup family from his Church. Back on his youth time, this also a part of their sports event.</p>
+        <h3>Golf</h3>
+        <p>This sport have never been played by Rolly. But he is interested to watch some of the game on TV, especially when Filipino athletes are playing of Sea Game, Asian Games even on Olympics.</p>
+        </section>
+	<section>
+	<h2>Home Address Location</h2>
+	<p>B2 L44 Romans Street Ascension Hills Subdivision San Isidro Angono Rizal</p>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6557.982368121933!2d121.15279193773!3d14.539706121154218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c6d8e0d1bbd9%3A0x5c5d9e673b93f880!2sAscension%20Hills%20Subdivision%2C%20Angono%2C%20Rizal!5e0!3m2!1sen!2sph!4v1772900101516!5m2!1sen!2sph" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</aside>
+       	<footer>
+      	<p class="copyright">All information are data privacy of Rolando T. Dela Cruz</p>
+        <p class="contact">email:<a href="mailto:rtdelacruz0719@gmail.com">rtdelacruz0719@gmail.com</a></p>
+	<p class="contact">facebook: <a href="https://www.facebook.com/rolly.delacruz.562/">rolly</a></p>
+	</footer>
+</body>
+</html>
